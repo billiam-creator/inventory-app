@@ -1,6 +1,6 @@
 <?php
-require_once 'config.php'; // Include database connection
-require_once 'includes/header.php'; // Include header (this also starts the session)
+require_once 'config.php'; 
+require_once 'includes/header.php'; 
 ?>
 
 <h1>Welcome to the Inventory Management System</h1>
@@ -17,6 +17,6 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 ?>
 
 <?php
-mysqli_close($conn); // Close the database connection
+mysqli_close($conn); 
 require_once 'includes/footer.php'; 
 ?>
